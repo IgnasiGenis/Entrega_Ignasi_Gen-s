@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #004d00; /* Verd fosc */
+    color: #ffffff; /* Blanc per al text */
+}
+
+header {
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+
+/* Estil per als articles */
+article {
+    font-family: Arial, sans-serif; /* Tipografia base */
+    margin: 20px auto; /* Centra els articles horitzontalment */
+    padding: 20px;
+    border: 1px solid #444444; /* Borda suau */
+    border-radius: 8px; /* Borda arrodonida */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombra suau */
+    max-width: 800px; /* Amplada màxima augmentada */
+    background-color: black; /* Color de fons clar */
+}
+
+article:hover{
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+article .content {
+    display: flex; /* Organitza els elements horitzontalment */
+    flex-direction: column; /* Organitza els elements en columna */
+    gap: 10px; /* Espai entre la imatge i el text */
+    align-items: center; /* Centra els elements */
+}
+
+article img {
+    width: 100%; /* Amplada completa del contenidor */
+    height: auto; /* Manté la proporció de la imatge */
+    border-radius: 8px; /* Borda arrodonida */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombra suau per a la imatge */
+}
+
+article .text {
+    display: flex; /* Utilitza flexbox per organitzar */
+    flex-direction: column; /* Organitza el text i el vídeo verticalment */
+    gap: 10px; /* Espai entre els elements */
+    width: 100%; /* Amplada completa */
+    text-align: center; /* Centra el text */
+}
+
+article .text iframe {
+    width: 100%; /* Amplada total del contenidor */
+    height: 100%;
+    aspect-ratio: 16 / 9; /* Manté la proporció 16:9 */
+    border: none; /* Elimina el contorn del vídeo */
+    margin-top: 10px; /* Espai entre el text i el vídeo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombra suau per al vídeo */
+}
+
+article h2 {
+    font-size: 24px; /* Tamany del text */
+    margin-bottom: 15px; /* Espai sota el títol */
+    color: red; /* Color del text */
+}
+
+article p {
+    font-size: 16px; /* Tamany del text dels paràgrafs */
+    line-height: 1.6; /* Alçada de línia */
+    color: white; /* Color lleugerament més clar */
+    margin: 0; /* Elimina marges per defecte */
+}
+
+article ul {
+    margin: 10px auto; /* Centra la llista horitzontalment */
+    padding-left: 20px; /* Espaiat des de l'esquerra */
+    color: white; /* Color lleugerament més clar */
+    text-align: left; /* Text alineat a l'esquerra */
+    list-style-position: inside; /* Manté els punts dins la llista */
+}
+
+article ul li {
+    font-size: 16px; /* Tamany del text */
+    margin-bottom: 5px; /* Espai entre els elements de la llista */
+}
+
+/* Barra de navegació */
+nav {
+    background-color: #444444;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Contenidor per al desplegable */
+.tops {
+    position: relative;
+}
+
+.tops-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.tops-content a {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.tops-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.tops:hover .tops-content {
+    display: block;
+}
+
+/* Ajustos per a la taula */
+article table {
+    width: 100%; /* Fer que la taula ocupi tot l'ample disponible */
+    border-collapse: collapse; /* Eliminar espais entre les cel·les */
+}
+
+article th, article td {
+    padding: 10px; /* Espai intern a les cel·les */
+    text-align: left; /* Alinear el text a l'esquerra */
+    border: 1px solid #ddd; /* Afegir vores suaus a les cel·les */
+}
+
+article th {
+    background-color: grey; /* Fons per a les capçaleres de la taula */
+}
